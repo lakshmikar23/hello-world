@@ -33,11 +33,14 @@
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
-               <version>3.1</version>             
+               <version>3.1</version> 
+     <!--          
         <configuration>
                  <fork>true</fork>
                  <executtable>/usr/lib/jvm/jre-1.8.0-openjdk-1.8.0.242.b08-0.el8_1.x86_64/bin/java</executable>
-        </configuration>
+        </configuration
+-->
+
       </plugin>
 
       <plugin>
