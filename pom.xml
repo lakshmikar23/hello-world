@@ -47,6 +47,15 @@
         <artifactId>maven-release-plugin</artifactId>
         <configuration>
           <autoVersionSubmodules>true</autoVersionSubmodules>
+               <archive>
+    <manifestEntries>
+     <Major-Version>${project.version}</Major-Version>
+     <Build-Version>${build.number}</Build-Version>
+     <Build-Time>${maven.build.timestamp}</Build-Time>
+     <Build-Host>${agent.name}</Build-Host>
+     <Build-User>${user.name}</Build-User>
+    </manifestEntries>
+   </archive>  
         </configuration>
       </plugin>
 
